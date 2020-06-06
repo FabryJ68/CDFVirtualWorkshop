@@ -416,7 +416,7 @@ image::images/put_to_kudu_pg.png[width=800]
 +
 image::images/put_to_kudu_pg_overview.png[width=800]
 +
-. Now we'll finish flow configuration to read the sensor data from Kafka, execute a model prediction for each of them and write the results to Kudu. At the end of this section you flow should look like the one below:
+. Now we'll finish flow configuration to read the sensor data from Kafka, execute a model prediction for each of them and write the results to Kudu. At the end of this section your flow should look like the one below:
 
 image::images/from_kafka_to_kudu_flow.png[width=800]
 
