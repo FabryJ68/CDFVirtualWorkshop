@@ -627,7 +627,7 @@ In this lab, you will be challenged to run real time analytics over the telemetr
 
 === Publish scored event data to Kafka
 
-Before we start query data with Flink, let's modify _Put to Kudu_ processor group o publish scored data to a new Kafka topic called _iot_scored_.
+Before we start query data with Flink, let's modify _Put to Kudu_ processor group to publish scored data to a new Kafka topic called _iot_scored_.
 
 . In NiFi, go to _Put to Kudu_ processor group. We have added a new pre-configured processor _Publish to Kafka topic: iot_scored_.
 +
