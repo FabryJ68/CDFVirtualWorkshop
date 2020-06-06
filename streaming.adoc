@@ -349,7 +349,7 @@ We've noticed that the problem always happen with the temperatures in measuremen
 image::images/cem_additional_processors.png[width=800]
 
 .. *Extract sensor_0 and sensor1 values*: will extract the value of the attribute we want to filter.
-.. *Extract sensor_0 and sensor1 values*: will evaluate a regular expression to filter the data value we want to filter.
+.. *Filter Errors*: will evaluate a regular expression to filter the data value we want to filter.
 
 . Reconnect the _ConsumeMQTT_ processor to the _Extract sensor_0 and sensor1 values_ processor (top right processor in the canvas):
 .. Click on the existing connection between _ConsumeMQTT_ and the _RPG_ to select it.
