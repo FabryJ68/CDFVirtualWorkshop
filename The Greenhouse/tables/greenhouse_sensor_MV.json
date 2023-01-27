@@ -1,0 +1,39 @@
+{
+  "metadata" : {
+    "schema.watermark.0.strategy.expr" : "`eventTimestamp` - INTERVAL '3' SECOND",
+    "properties.auto.offset.reset" : "earliest",
+    "schema.4.expr" : "TO_TIMESTAMP_LTZ(`ts`, 3)",
+    "schema.0.data-type" : "BIGINT",
+    "schema.2.name" : "humidity",
+    "format" : "json",
+    "schema.1.name" : "ts",
+    "scan.startup.mode" : "group-offsets",
+    "schema.4.name" : "eventTimestamp",
+    "schema.1.data-type" : "BIGINT",
+    "schema.3.data-type" : "DOUBLE",
+    "connector" : "kafka: greenhouse-kafka",
+    "schema.2.data-type" : "DOUBLE",
+    "schema.3.name" : "temperature",
+    "properties.request.timeout.ms" : "120000",
+    "schema.watermark.0.rowtime" : "eventTimestamp",
+    "schema.watermark.0.strategy.data-type" : "TIMESTAMP(3)",
+    "properties.transaction.timeout.ms" : "900000",
+    "topic" : "greenhouse-sensors-data",
+    "properties.group.id" : "greenhouse_MV",
+    "schema.4.data-type" : "TIMESTAMP(3) WITH LOCAL TIME ZONE",
+    "schema.0.name" : "sensorId",
+    "ssb.schema.text" : "{\n  \"type\": \"record\",\n  \"name\": \"inferredSchema\",\n  \"fields\": [\n    {\n      \"name\": \"sensorId\",\n      \"type\": \"long\",\n      \"doc\": \"Type inferred from '1'\"\n    },\n    {\n      \"name\": \"ts\",\n      \"type\": \"long\",\n      \"doc\": \"Type inferred from '1674577302'\"\n    },\n    {\n      \"name\": \"humidity\",\n      \"type\": \"double\",\n      \"doc\": \"Type inferred from '55.0'\"\n    },\n    {\n      \"name\": \"temperature\",\n      \"type\": \"double\",\n      \"doc\": \"Type inferred from '20.2'\"\n    }\n  ]\n}",
+    "ssb.watermark_spec" : {
+      "timestamp_column" : "ts",
+      "rowtime_column" : "eventTimestamp"
+    },
+    "ssb.properties" : {
+      "auto.offset.reset" : "earliest",
+      "group.id" : "greenhouse_MV"
+    }
+  },
+  "type" : "ssb",
+  "table_name" : "greenhouse_sensor_MV",
+  "transform_code_b64_encoded" : false,
+  "transform_code" : ""
+}

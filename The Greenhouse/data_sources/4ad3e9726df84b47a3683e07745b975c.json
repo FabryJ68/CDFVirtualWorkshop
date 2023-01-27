@@ -1,0 +1,11 @@
+{
+  "id" : "4ad3e9726df84b47a3683e07745b975c",
+  "name" : "greenhouse-SR",
+  "type" : "catalog",
+  "properties" : {
+    "table_filters" : [ ],
+    "catalog_type" : "registry",
+    "kafka.provider.id" : "e178d18ac3b84540ab60c2724ef48b4d",
+    "registry.address" : "https://thegreenteam-kafka-master0.se-sandb.a465-9q4k.cloudera.site:7790/api/v1/"
+  }
+}

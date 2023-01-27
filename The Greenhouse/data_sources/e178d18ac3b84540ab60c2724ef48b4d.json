@@ -1,0 +1,13 @@
+{
+  "id" : "e178d18ac3b84540ab60c2724ef48b4d",
+  "name" : "greenhouse-kafka",
+  "type" : "kafka",
+  "properties" : {
+    "brokers" : "thegreenteam-kafka-corebroker0.se-sandb.a465-9q4k.cloudera.site:9093,thegreenteam-kafka-corebroker1.se-sandb.a465-9q4k.cloudera.site:9093,thegreenteam-kafka-corebroker2.se-sandb.a465-9q4k.cloudera.site:9093",
+    "protocol" : "sasl",
+    "mechanism" : "PLAIN",
+    "username" : "srv_thegreenhouse",
+    "password" : "Thegreenhouse123!",
+    "ssl.truststore.location" : "/var/lib/cloudera-scm-agent/agent-cert/cm-auto-global_truststore.jks"
+  }
+}

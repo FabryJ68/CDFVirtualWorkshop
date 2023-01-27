@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "schema.3.data-type" : "DOUBLE",
+    "__ssb.view.original_query" : "SELECT `sensorId`, HOP_END(`eventTimestamp`, INTERVAL '5' SECOND, INTERVAL '15' SECOND) AS `windowEnd`, AVG(`humidity`) AS `avg_hum`, AVG(`temperature`) AS `avg_temp`\nFROM `greenhouse_sensors_data`\nGROUP BY `sensorId`, $HOP(`eventTimestamp`, INTERVAL '5' SECOND, INTERVAL '15' SECOND)",
+    "__ssb.is_view" : "true",
+    "schema.2.data-type" : "DOUBLE",
+    "schema.3.name" : "avg_temp",
+    "schema.0.data-type" : "BIGINT",
+    "schema.2.name" : "avg_hum",
+    "schema.1.name" : "windowEnd",
+    "__ssb.view.expanded_query" : "SELECT `greenhouse_sensors_data`.`sensorId`, HOP_END(`greenhouse_sensors_data`.`eventTimestamp`, INTERVAL '5' SECOND, INTERVAL '15' SECOND) AS `windowEnd`, AVG(`greenhouse_sensors_data`.`humidity`) AS `avg_hum`, AVG(`greenhouse_sensors_data`.`temperature`) AS `avg_temp`\nFROM `ssb`.`The Greenhouse`.`greenhouse_sensors_data`\nGROUP BY `greenhouse_sensors_data`.`sensorId`, $HOP(`greenhouse_sensors_data`.`eventTimestamp`, INTERVAL '5' SECOND, INTERVAL '15' SECOND)",
+    "schema.0.name" : "sensorId",
+    "schema.1.data-type" : "TIMESTAMP(3) NOT NULL"
+  },
+  "type" : "ssb",
+  "table_name" : "average_view",
+  "transform_code_b64_encoded" : false
+}
